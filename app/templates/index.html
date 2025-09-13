@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agentic AI: Your Financial Copilot</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f9; margin: 0; padding: 0; }
+        .container { max-width: 600px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h1 { color: #2d3e50; }
+        input[type=text] { width: 80%; padding: 10px; margin: 10px 0; border-radius: 4px; border: 1px solid #ccc; }
+        button { padding: 10px 20px; background: #2d3e50; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+        .answer { margin-top: 20px; padding: 15px; background: #e9f7ef; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Agentic AI: Your Financial Copilot</h1>
+        <form method="post">
+            <input type="text" name="question" placeholder="Ask a finance question..." required>
+            <button type="submit">Ask</button>
+        </form>
+        {% if answer %}
+        <div class="answer">
+            <strong>Answer:</strong> {{ answer }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
